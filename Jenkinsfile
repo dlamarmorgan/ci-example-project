@@ -1,5 +1,5 @@
-node('earthly && linux && docker') {
+node('nomad') {
     stage('Build with Earthly') {
-        sh 'earthly github.com/earthly/ci-example-project:main+docker'
+         sh 'earthly github.com/earthly/ci-example-project:main+docker'
     }
 }
